@@ -1,3 +1,8 @@
+properties([[$class: 'GithubProjectProperty',
+             displayName: '',
+             projectUrlStr: 'https://github.com/naveenreddy5568/multibranchpipeline_repo.git/'],
+            pipelineTriggers([])])
+
 #!/usr/bin/env groovy
 
 
