@@ -1,7 +1,7 @@
 properties([[$class: 'GithubProjectProperty',
              displayName: '',
              projectUrlStr: 'https://github.com/naveenreddy5568/multibranchpipeline_repo.git/'],
-            pipelineTriggers([])])
+             pipelineTriggers([githubPush()])])
 
 #!/usr/bin/env groovy
 
@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps { 
-                echo " This is  Build Stage"
+                echo " This is Build Stage"
             }
         }
         stage('Test'){
