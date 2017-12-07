@@ -3,7 +3,6 @@ properties([[$class: 'GithubProjectProperty',
              projectUrlStr: 'https://github.com/naveenreddy5568/multibranchpipeline_repo.git/'],
              pipelineTriggers([githubPush()])])
 
-#!/usr/bin/env groovy
 
 
 pipeline {
